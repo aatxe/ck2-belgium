@@ -1,0 +1,9 @@
+k_belgium;Belgium;Belgique;Belgien;;;;;;;;;;;x
+k_belgium_adj;Belgian;Belge;Belgischen;;;;;;;;;;;x
+create_belgium;Form Belgium;Faire la Belgique;;;;;;;;;;;;x
+create_belgium_desc;Establish the Kingdom of Belgium.;Faire le royayume de Belgique.;;;;;;;;;;;;x
+belgian;Belgian;Belge;Belgischen;;;;;;;;;;;x
+EVTDESC_BEL_1;[Root.GetName] has converted from [Root.Culture.GetName] to Belgian.;[Root.GetName] est passée [Root.Culture.GetDuDela] [Root.Culture.GetName] au Belge.;;;;;;;;;;;;x
+EVTOPTA_BEL_1;Unity makes Strength!;L'union fait la force!;Einigkeit macht stark!;;;;;;;;;;;x
+EVTDESC_BEL_2;Belgian settlers in [Root.GetName] have established a new holding.;Les colons belges à [Root.GetName] ont établi un nouveau holding.;;;;;;;;;;;;x
+EVTOPTA_BEL_2;Unity makes Strength!;L'union fait la force!;Einigkeit macht stark!;;;;;;;;;;;x

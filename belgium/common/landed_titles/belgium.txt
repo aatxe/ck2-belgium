@@ -1,0 +1,14 @@
+k_belgium = {
+    color = {249 219 52}
+
+    capital = 78 # Brugge
+
+		title = "KING"
+		title_female = "QUEEN"
+
+		dynasty_title_names = no 	# Will not be named "Seljuk", etc.
+    
+    allow = {
+          always = no # Made exclusively via decision.
+    }
+}

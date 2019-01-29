@@ -1,0 +1,67 @@
+decisions = {
+    create_belgium = {
+        is_high_prio = yes
+        only_independent = yes
+        ai_check_interval = 60
+
+        potential = {
+            religion_group = christian
+            NOT = { higher_tier_than = DUKE }
+            has_landed_title = d_flanders
+            has_landed_title = d_brabant
+            has_landed_title = d_lower_lorraine
+            OR = {
+                culture = old_frankish
+                culture = frankish
+                culture = german
+                culture = dutch
+            }
+            k_belgium = { has_holder = no }
+        }
+
+        allow  = {
+            is_adult = yes
+            war = no
+            NOT = { trait = incapable }
+            AND = {
+                completely_controls = d_flanders
+                completely_controls = d_brabant
+                completely_controls = d_lower_lorraine
+            }
+            is_vice_royalty = no
+            wealth = 300
+            prestige = 1000
+        }
+
+        effect = {
+            wealth = -300
+            prestige = 1000
+            primary_title = {
+                save_event_target_as = current_primary_title
+            }
+            d_flanders = {
+                show_scope_change = no
+                de_jure_liege = k_belgium
+            }
+            d_brabant = {
+                show_scope_change = no
+                de_jure_liege = k_belgium
+            }
+            d_lower_lorraine = {
+                show_scope_change = no
+                de_jure_liege = k_belgium
+            }
+            k_belgium = {
+                show_scope_change = no
+                grant_title = ROOT
+                copy_title_laws = event_target:current_primary_title
+            }
+            if = {
+                limit = { has_nickname = no }
+                give_nickname = nick_the_great
+            }
+        }
+
+        ai_will_do = { factor = 1 }
+    }
+}
